@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block title %}Terms and Conditions — Spendly{% endblock %}
+
+{% block content %}
+<section class="auth-section">
+    <div class="auth-container">
+        <div class="auth-header">
+            <h1 class="auth-title">Terms and Conditions</h1>
+            <p class="auth-subtitle">Please read these terms carefully before using Spendly.</p>
+        </div>
+
+        <div class="auth-card">
+            <div class="terms-content">
+                <div class="form-group" style="margin-bottom: 2rem;">
+                    <h3 class="feature-title" style="margin-bottom: 0.5rem;">1. Acceptance of Terms</h3>
+                    <p class="feature-body">
+                        By creating an account or using the Spendly service, you agree to be bound by these Terms and Conditions. If you do not agree to these terms, please do not use the service.
+                    </p>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 2rem;">
+                    <h3 class="feature-title" style="margin-bottom: 0.5rem;">2. Use of Service</h3>
+                    <p class="feature-body">
+                        Spendly provides a tool for personal expense tracking. You agree to use the service only for lawful purposes and in a manner that does not infringe upon the rights of others or restrict their use of the service.
+                    </p>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 2rem;">
+                    <h3 class="feature-title" style="margin-bottom: 0.5rem;">3. User Data</h3>
+                    <p class="feature-body">
+                        Your financial data is your own. We take reasonable measures to protect your information. By using Spendly, you acknowledge that you are responsible for the accuracy of the data you input.
+                    </p>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 2rem;">
+                    <h3 class="feature-title" style="margin-bottom: 0.5rem;">4. Limitations of Liability</h3>
+                    <p class="feature-body">
+                        Spendly is provided "as is" without any warranties. We are not liable for any financial losses, data loss, or damages resulting from the use or inability to use the service.
+                    </p>
+                </div>
+
+                <div class="form-group">
+                    <h3 class="feature-title" style="margin-bottom: 0.5rem;">5. Changes to Terms</h3>
+                    <p class="feature-body">
+                        We reserve the right to modify these terms at any time. Continued use of the service after changes are posted constitutes your acceptance of the new terms.
+                    </p>
+                </div>
+            </div>
+            <div style="margin-top: 3rem; text-align: center; border-top: 1px solid var(--border); padding-top: 2rem;">
+                <a href="{{ url_for('landing') }}" class="btn-ghost" style="padding: 0.65rem 1.5rem; font-size: 0.9rem;">Back to Home</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
