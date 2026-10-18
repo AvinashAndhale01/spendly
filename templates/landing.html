@@ -22,7 +22,7 @@
 
     <div class="hero-actions">
         <a href="{{ url_for('register') }}" class="btn-black">Create free account</a>
-        <a href="#features" class="btn-black" style="background: transparent; color: #000; border: 1px solid #000;">See how it works</a>
+        <a href="javascript:void(0)" id="open-demo-modal" class="btn-black" style="background: transparent; color: #000; border: 1px solid #000;">See how it works</a>
     </div>
 
     <div class="hero-visual">
@@ -68,6 +68,15 @@
         </div>
     </div>
 </section>
+
+<div id="demo-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-container">
+        <button id="close-demo-modal" class="modal-close">&times;</button>
+        <div class="modal-video-wrapper">
+            <iframe id="demo-video" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
 
 <section class="features" id="features">
     <div class="features-inner">
